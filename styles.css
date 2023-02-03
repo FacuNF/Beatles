@@ -1,0 +1,731 @@
+body{
+    line-height: 1.7142857143;
+    word-break: break-word;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+hr{
+    height: 10vh !important;
+    background-color: transparent;
+}
+
+/*NAV-BAR*/
+.navbar_container{
+    width: 15vw; height: 100vh;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    position: absolute;
+    opacity: 30%;
+    transition: 1s;
+}
+.navbar_container:hover{
+    opacity: 100%;
+    transition: 1s;
+    z-index: 100;
+}
+.navbar_section{
+    width: 100%; 
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: 1s;
+}
+.navbar_icon img{
+    width: 15vh; height: 15vh;
+    object-fit: contain;
+}
+.navbar_title h3{
+    color: transparent;
+    transform: translateY(-20px);
+    font-weight: 400;
+    transition: 1s;
+}
+.navbar_section:hover .navbar_title h3{
+    color: black;
+    transform: translateY(0px);
+    font-size: 1.4rem;
+    transition: 1s;
+}
+#george:hover .navbar_title h3{
+    text-shadow: -2px 1px 2px #627E4E;
+}
+#paul:hover .navbar_title h3{
+    text-shadow: -2px 1px 2px #96644D;
+}
+#ringo:hover .navbar_title h3{
+    text-shadow: -2px 1px 2px #DFC95A;
+}
+#john:hover .navbar_title h3{
+    text-shadow: -2px 1 px 2px #7DB2BE;
+}
+
+
+/*INTRO & MEMBERS*/
+.intro{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 100%; height: 80vh; 
+    padding: 3%;
+    box-sizing: border-box;
+}
+.intro img{
+    width: 100%; height: 100%;
+    object-fit: contain;
+}
+.members{
+    display: flex;
+    height: 70vh;
+    border-radius: 12px;
+    align-items : center;
+    justify-content: center;
+    opacity: 90%;
+    box-sizing: border-box;
+}
+.members div{
+    border-radius: 12px;
+}
+.members:hover{
+    opacity: 100%;
+    z-index: 100;
+    transition: 1s;
+}
+.members a{
+    width: 100%; height: 100%;
+}
+.paul_front{
+    background-image: url(./Img/Members/Paul_Front.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+.paul_back{
+    width: 100% ;height: 100%;
+    background-image: url(./Img/Members/Paul_Back.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    opacity: 0%;
+    transition: 1s;
+}
+.paul_back:hover{
+    opacity: 100%;
+    transition: 1s;
+}
+.george_front{
+    background-image: url(./img/Members/George_Front.jpg);
+    background-position: 55%;
+    background-size: cover;
+}
+.george_back{
+    width: 100%; height: 100%;
+    background-image: url(./img/Members/George_Back.jpg);
+    background-position: 55%;
+    background-size: cover;
+    opacity: 0%;
+    transition: 1s;
+}
+.george_back:hover{
+    opacity: 100%;
+    transition: 1s;
+}
+.ringo_front{
+    background-image: url(./Img/Members/Ringo_Front.jpg);
+    background-position: top;
+}
+.ringo_back{
+    width: 100%; height: 100%;
+    background-image: url(./Img/Members/Ringo_Back.jpg);
+    background-position: top;
+    opacity: 0%;
+    transition: 1s;
+}
+.ringo_back:hover{
+    opacity: 100%;
+    transition: 1s;
+}
+.john_front{
+    background-image: url(./Img/Members/John_Front.jfif);
+    background-size: cover;
+    background-position: center;
+}
+.john_back{
+    width: 100%; height: 100%;
+    background-image: url(./Img/Members/John_Back.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0%;
+    transition: 1s;
+}
+.john_back:hover{
+    opacity: 100%;
+    transition: 1s;
+}
+.m-name{
+    width: 100%; height: 100%;
+    font-family: 'Crimson Text', serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: black;
+    background-color: transparent;
+    border: none;
+    border-radius: 12px;
+    opacity: .03;
+    transition: 2s;
+}
+.m-name:hover{
+    width: 100%; height: 100%;
+    padding: 5%;
+    font-size: 2.5rem;
+    color: gold;
+    background-color: rgba(2, 2, 2, 0.514);
+    outline: 7px solid white;
+    opacity: .9;
+    transition: 1.5s;
+}
+
+/*PICTURES & LINKS*/
+.section_two{
+    height: min-content;
+    text-align: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: .7s;
+} 
+.section_two div div{
+    border-radius: 12px;
+    box-sizing: border-box;
+    background-size: cover;
+    background-position: center;
+}
+
+#who_were_they{
+    height: 90vh;
+    margin: 2vh;
+    padding: 0%;
+    background-image: url(./Img/Intro&links/How-were-they.webp);
+    cursor: pointer;
+}
+    .who_were_they{
+        position: relative;
+        width: 100%; height: 100%;
+        margin: 0%; padding: 0%;
+        box-sizing: border-box;
+        border-radius: 18px;
+        transition: 1s;
+    }
+    .who_were_they:hover{   
+        transition: 1s;
+    }
+    .who_were_they h3{
+        position: relative;
+        font-size: 2.1rem;
+        padding-top: 15%;
+        color: white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        transition: 1s;
+    }   
+    .who_were_they:hover h3{
+        color: #016d94;
+    }
+    .who_were_they p{
+        max-width: 60%;max-height: 70%;
+        text-align: justify;
+        margin-left: 20%; margin-top: 10%;
+        font-size: larger;
+        font-weight: 600;
+        line-height: 38px;
+        overflow: scroll;
+        color: transparent;
+        transition: 1s;
+    }
+    .who_were_they p::-webkit-scrollbar{
+        display: none;
+    }
+    .who_were_they:hover p{
+        color: white;
+        text-shadow: 2px 2px 2px #016d94;
+        transition: 1s;
+    }
+
+#rolling_stone{
+    height: 90vh;
+    margin: 2vh;
+    padding: 0%;
+    background-image: url(./Img/Intro&links/Rolling_Stones.jpg);
+}
+    .rolling_stones_color{
+        position: relative;
+        width: 100%; height: 100%;
+        box-sizing: border-box;
+        background-image: url(./Img/Intro&links/Rolling_Stones_color.jpg);
+        border-radius: 18px;
+        opacity: 0%;
+        transition: 1s;
+    }
+    .rolling_stones_color:hover{
+        opacity: 100%;
+        transition: 1s;
+    }
+
+#the_sixties{
+    position: relative;
+    height: 90vh;
+    margin: 2vh;
+    align-items: center;
+    background-image: url(./Img/Intro&links/60s.webp);
+    background-size: cover;
+}
+    .the_sixties_color{
+        width: 100%;
+        height: 100%;
+        background-image: url(./Img/Intro&links/60s_color.jpg);
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 10%;
+        opacity: 0%;
+        transition: 1s;
+    }
+    .the_sixties_color:hover{
+        opacity: 100%;
+        transition: 1.5s;
+    }
+    .the_sixties_color h3{ 
+        max-width: 60%;max-height: auto;
+        padding: 2%;
+        border-radius: 12px;
+        font-size: 2.3rem;
+        font-weight: 900;
+        color: #fcfc02;
+        text-shadow: 6px 6px 6px black;
+        transition: 1s;
+    }
+    .the_sixties_color p{
+        max-width: 60%;max-height: auto;
+        padding: 2%;
+        text-align: justify;
+        font-size: larger;
+        font-weight: 750;
+        border-radius: 12px;
+        line-height: 36px;
+        overflow: scroll;
+        text-shadow: 2px 2px 2px black;
+        color: #FDFE69;
+    }
+    .the_sixties_color p::-webkit-scrollbar{
+        display: none;
+    }
+
+#beatlemania{
+    height: 90vh;
+    position: relative;
+    margin: 2vh;
+    padding: 0%;
+    border-radius: 12px;
+    background-image: url(./Img/Intro&links/Starts.jpg);
+    background-size:cover;
+    background-position: static;
+}
+    .beatlemania_h3{
+        color: white;
+        text-shadow: #57AEEB 1px 1px;
+        font-weight: 700;
+        position: absolute;
+        top: 15%; left: 27%;
+    }
+    #beatlemania:hover h3{
+        color: transparent;
+        text-shadow: none;
+    }
+    iframe{
+        border-radius: 12px;
+        opacity: 0%;
+        transition: 1s;
+        z-index: 10;
+    }
+    iframe:hover{
+        opacity:100%;
+        transition: 1s;
+    }
+
+/*DISCOGRAPHY*/
+.discography_section-color{
+    background-color: rgba(128, 128, 128, 0.589);
+}
+.discography_title{
+    height: 40vh;
+    padding-top: 10vh;
+    padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    object-fit: cover;
+}
+.discography_title img{
+    width: 100%;
+}
+.discography_container{
+    display: inline-block;
+    flex-direction: row;
+    width: 100%; height: 80vh;
+    box-sizing: border-box;
+    background-attachment: scroll;
+    overflow-x: scroll;
+}
+.discography_container::-webkit-scrollbar{
+    display: none;
+}
+.blank_space{
+    width: 5vw;
+    border-radius: 50%;
+    box-sizing: border-box;
+}
+.album{
+    width: 10.5%; height: 85%;
+    margin: 1%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    background-position: center;
+    background-size: cover;
+    border-radius: 24px;
+    font-size: 1.7rem;
+    color: transparent;
+    box-sizing: border-box;
+    outline: 10px rgba(255, 255, 255, 0.1) solid;
+    overflow: hidden;
+    transition: .7s; 
+}
+.album:hover{
+    outline: 5px rgba(255, 255, 0) solid;
+    cursor: pointer;
+    transition: 1s;
+}
+@media (max-width:992px) {
+    .albums{
+        position: relative;
+        display: flex;
+        width: fit-content; height: 100%;
+        padding-left: 3vw; padding-right: 3vw;
+        align-items: center;
+        justify-content: space-evenly;
+        right:5%;
+    }
+    .active_album{
+        width: 90vw;
+        outline: 3px white solid;
+        box-sizing: border-box;
+        transition: 1s;
+    }
+} 
+@media (min-width:993px) {
+    .albums{
+        position: relative;
+        display: flex;
+        width: 157.5vw; height: 100%;
+        padding-left: 3vw; padding-right: 3vw;
+        align-items: center;
+        justify-content: space-evenly;
+        right:5%;
+    }
+    .active_album{
+        width:65.5%;
+        outline: 3px white solid;
+        box-sizing: border-box;
+    }
+}
+@media (min-width:1200px) {
+    .active_album{
+        width:46.5%; 
+    }
+}
+.album_info{
+    width: 100%; height: 100%;
+    padding: 0%;
+    position: relative;
+    display: flex;
+    text-align: center;
+    border: 2px solid rgba(255, 254, 254, 0.521);
+    border-radius: 24px;
+    overflow: scroll;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.750);
+    box-sizing: border-box;
+    opacity: 0%;
+    transition: .7s;
+}
+.album_info::-webkit-scrollbar{
+    display: none;
+}
+.date{
+    width: 100%;
+    align-self: flex-end;
+    font-size: 1.7rem;
+    color: white;
+    font-family: 'Signika Negative', sans-serif;
+    transition: 1s;
+}
+.title{
+    color: yellow;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: 'Ubuntu', sans-serif;
+    align-self: center;
+}
+.quote{
+    max-height: 80%;
+    padding-left: 6%;
+    padding-right: 6%;
+    overflow: scroll;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+}
+.quote::-webkit-scrollbar{
+    display: none;
+}
+.spotify{
+    margin: auto;
+    margin-top: 0%;
+    width: 36px; height: 36px;
+    border-radius: 18px;
+    border-style: none;
+    background-image: url(./Img/Icon/spotify.png);
+    background-size: cover;
+    background-color: rgb(110, 201, 110);
+    opacity: 30%;
+    transition: .4s;
+}
+.spotify:hover{
+    background-color: rgb(110, 201, 110);
+    transition: .4s;
+    opacity: 100%;
+}
+.signature{
+    color: hsl(60, 100%, 50%, 0.9);
+    align-self: flex-start;
+    font-family: 'Proza Libre', sans-serif;
+}
+
+#one{
+    background-image: url(./Img/discography/please_please_me.jfif);
+}
+#two{
+    background-image: url(./Img/discography/with_the_beatles.jfif);
+}
+#three{   
+    background-image: url(./Img/discography/A_hard_days_night.jpg);
+}
+#four{
+    background-image: url(./Img/discography/Beatles-for-sale.jpg);
+}
+#five{
+    background-image: url(./Img/discography/Help!.jpg);
+}
+#six{
+    background-image: url(./Img/discography/Rubber_soul.jpg);
+} 
+#seven{
+    background-image: url(./Img/discography/Revolver.jpg);
+
+} 
+#eight{
+    background-image: url(./Img/discography/Sgt.Pepper.jpg);
+
+} 
+#nine{
+    background-image: url(./Img/discography/Magical_mystery_tour.jpg);
+
+}
+#ten{
+    background-image: url(./Img/discography/The_beatles.jpg);
+
+} 
+#eleven{
+    background-image: url(./Img/discography/Yellow_submarine.jpg);
+
+}
+#twelve{
+    background-image: url(./Img/discography/Abbey_road.jfif);
+
+}
+#thirteen{
+    background-image: url(./Img/discography/Let_it_be.jpg);
+}
+
+/*Inline-Movement*/
+.movement_container{
+    width: 100%; height: 40vh;
+    margin: 0%; padding: 0%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.movement_container::-webkit-scrollbar{
+    display: none;
+}
+.movement{
+    width: min-content; height: 100%;
+    margin-bottom: 12vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    font-family: 'Waiting for the Sunrise', cursive;
+    letter-spacing: 4px;
+    transform: translateX(-20px);
+    transition: ;/*For movement*/
+}
+.movement_quote{
+    width: 35vw; height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly   ;
+    align-items: center;
+}
+.beatle_icon{
+    width: auto; height: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.beatle_icon img{
+    width: 88px; height: auto;
+    object-fit: cover;
+    box-sizing: border-box;  
+}
+
+/*Galery*/
+.galery_container{
+    height: auto;
+    position: relative;
+}
+.first_galery_carousel_container{
+    height: 95vh;
+    display: inline-block;
+    overflow: scroll;
+    box-sizing: border-box; 
+}
+.first_galery_carousel_container::-webkit-scrollbar{
+    display: none;
+}
+.second_galery_carousel_container{
+    height: 95vh;
+    display: inline-block;
+    overflow: scroll;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+
+}
+.second_galery_carousel_container::-webkit-scrollbar{
+    display: none;
+}
+.galery__carousel{
+    display: flex;
+    text-align: center; 
+    width: 400%; height: 100%;
+}
+.first_galery_item{
+    width: 100%; height: 100%;
+    position: relative;
+    background-color: #89b4c4;
+}
+.second_galery_item{
+    width: 100%; height: 100%;
+    position: relative;
+    background-color: #89b4c4;
+}
+.first_galery_item img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.second_galery_item img{
+    width: 100%; height: 100%;
+    object-fit: cover;
+    box-sizing: border-box;
+}
+.left-qoute{
+    width: 30%; height: 40%;
+    padding: 2%;
+    position: absolute;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-self: justify;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 24px;
+    color: yellow;
+    text-shadow: 2px 2px 2px black;
+    right: 10%; top: 25%;
+}
+.right-qoute{
+    width: 25%; height: 40%;
+    position: absolute;
+    display: flex; flex-direction: column;
+    justify-content: space-between;
+    align-self: justify;
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    color: yellow;
+    text-shadow: 2px 2px 2px black;
+    left: 10%; top: 25%;
+}
+
+/*Arrows*/
+.left-arrow_container{
+    width: auto; height: auto;
+    position: absolute;
+    left: 1%; top: calc(50% - 26px);
+    padding: 0%; margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    border-radius: 12px;
+}
+.left-arrow_container img{
+    width: 36px; height: 36px;
+    opacity: 50%; transition: .5s;
+    border-radius: 5px;
+}
+.left-arrow_container img:hover{
+    opacity: 100%;
+    background-color: #d5f0fa;
+    transition: .5s;
+    border-radius: 18px;
+}
+.right-arrow_container{
+    width: auto; height: auto;
+    position: absolute;
+    right: 1%; top: calc(50% - 26px);
+    padding: 0%; margin: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+}
+.right-arrow_container img{
+    width: 36px; height: 36px;
+    opacity: 50%; transition: .5s;
+    border-radius: 5px;
+}
+.right-arrow_container img:hover{
+    opacity: 100%;
+    background-color: #d5f0fa;
+    transition: .5s;
+    border-radius: 18px;
+}
